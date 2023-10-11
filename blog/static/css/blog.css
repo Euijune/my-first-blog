@@ -68,3 +68,7 @@ h4 {
     color: #FFFFFF;
     background-color: #C25100;
 }
+
+.intruder-image-list{
+    object-fit: cover;
+}

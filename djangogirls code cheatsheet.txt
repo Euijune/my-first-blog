@@ -1,0 +1,9 @@
+djangogirls> myvenv\Scripts\activate
+
+djangogirls> python manage.py runserver
+
+
+pythonanywhere web url
+https://euijune.pythonanywhere.com/
+
+* 파일 수정한 후에는, reload 잊지말기
