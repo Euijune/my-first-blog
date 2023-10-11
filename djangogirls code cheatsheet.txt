@@ -7,3 +7,6 @@ pythonanywhere web url
 https://euijune.pythonanywhere.com/
 
 * 파일 수정한 후에는, reload 잊지말기
+
+
+Generated token 9a99477044168c5cde407073a9b366073734d3bd for user choah76
