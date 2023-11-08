@@ -17,3 +17,16 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+# User 정보를 저장하는 Database를 하나 더 만들어야 함
+class User(models.Model):
+    uid = models.EmailField(max_length=200, blank=False)
+    pw = models.CharField(max_length=50, blank=False)
+    group = models.IntegerField(default=0)                  # 0: group이 없는 사람들에게 부여하는 group index
+    is_studying_now = models.BooleanField(default=False)    # 순공시간은 이 변수가 True일때 측정시작
+    stime_daily = models.IntegerField(default=0)            # 순공시간 기록 (* 매일 초기화 필요, 단위:초)
+    stime_weekly = models.IntegerField(default=0)           # 순공시간은 다른 table 만들어서 join하는 방안 탐구(foreign key)
+    stime_monthly = models.IntegerField(default=0)
+    stime_total = models.IntegerField(default=0)
+    #image = models.ImageField(upload_to='intruder_image/%Y/%m/%d/')    # 이미지가 필요할까?
