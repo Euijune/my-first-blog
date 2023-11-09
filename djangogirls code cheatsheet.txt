@@ -2,15 +2,18 @@ virtual env 실행
     [win]djangogirls> myvenv\Scripts\activate
     [linux]$ source venv/bin/activate
 
-djangogirls> python manage.py runserver
+djangogirls> python manage.py runserver 0.0.0.0:8000  # IPv4로 접근가능하도록 IP명시
 
 IP: 127.0.0.1:8000
 admin: 127.0.0.1:8000/admin/
 api 확인: 127.0.0.1:8000/api_root/Post
 
 pythonanywhere web url
-https://euijune.pythonanywhere.com/
+    https://euijune.pythonanywhere.com/
 
+Run pythonanywhere
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
+    $ git pull
 * 파일 수정한 후에는, reload 잊지말기
 
 
